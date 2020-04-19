@@ -1,4 +1,4 @@
-package y2020m04;
+package leetcode.y2020m04;
 
 public class RemoveElement {
     /**
@@ -29,7 +29,7 @@ public class RemoveElement {
     }
     /**
      * 解题思路：把每一个和val相等的元素和目前确定数组的长度的最后一个元素互换，
-     * 此处需要注意的是互换以后不用index++，因为互换以后并没有确定互换后的元素不等于val
+     * 此处需要注意的是互换以后不用index++，因为互换以后并没有确定互换后的元素不等于valm
      */
 
 }
