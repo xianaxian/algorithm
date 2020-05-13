@@ -5,18 +5,18 @@ WHERE 3>(
   SELECT COUNT(DISTINCT t2.score)
 	FROM test AS t2
 	WHERE t1.score<t2.score AND t1.course_id =t2.course_id
-)
+);
 
 SELECT *
 FROM test AS  t1 join test AS t2 ON t1.score<=t2.score AND t1.course_id=t2.course_id
-ORDER BY t1.id
+ORDER BY t1.id;
 #比那一条记录同科目高的高的数据，ORDER BY 是为了查看方便
 
 SELECT t1.*
 FROM test AS  t1 join test AS t2 ON t1.score<=t2.score AND t1.course_id=t2.course_id
 GROUP BY t1.id
 HAVING COUNT(DISTINCT t2.score)<=3
-ORDER  BY t1.course_id ASC,t1.score DESC
+ORDER  BY t1.course_id ASC,t1.score DESC;
 #按照成绩的id进行分组，有比这个成绩值大的记录，对记录的 score DISTINCT以后，如果小于等于3的就是前3
 #以下是参考数据库
 -- ----------------------------
