@@ -5,7 +5,7 @@ package leetcode.y2020m05;
  */
 public class QuickSort {
 
-    public static void quickSort(int arr[], int left, int right) {
+    public static void quickSort(int[] arr, int left, int right) {
         if (left >= right) {
             return;
         }
@@ -29,9 +29,9 @@ public class QuickSort {
     }
 
     public static void main(String[] args) {
-        int n[] = {1, 6, 3, 4, 2, 5, 2, 5, 7, 10};
+        int[] n = {1, 6, 3, 4, 2, 5, 2, 5, 7, 10};
         QuickSort test = new QuickSort();
-        test.quickSort(n, 0, n.length - 1);
+        quickSort(n, 0, n.length - 1);
         for (int i = 0; i < n.length; i++) {
             System.out.print(n[i] + " ");
         }

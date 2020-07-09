@@ -27,7 +27,7 @@ public class TestDeleteFromList {
         //for-each循环删除
         for (Integer integer : list) {
             System.out.println(integer+"将要被删除了");
-            list.remove(integer);
+//            list.remove(integer);
         }
         System.out.println("删除后的长度"+list.size());
     }

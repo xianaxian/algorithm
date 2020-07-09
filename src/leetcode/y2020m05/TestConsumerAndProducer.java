@@ -5,7 +5,10 @@ import java.util.concurrent.atomic.AtomicInteger;
 /**
  * @author xiana  2020-05-16 10:19
  */
-//消费者
+
+/**
+ * 消费者
+ */
 class Consumer extends Thread {
     private AtomicInteger productSize;
     private String name;
