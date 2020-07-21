@@ -1,7 +1,7 @@
 package leetcode.y2020m05;
 
 /**
- * @author xiana  2020-05-21 22:29
+ * @author whx  2020-05-21 22:29
  */
 public class QuickSort {
 
