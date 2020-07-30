@@ -1,6 +1,8 @@
 package test;
 
+import java.util.List;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 public class Test {
         public static String getId(){
@@ -11,5 +13,6 @@ public class Test {
         for (int i = 0; i < 10; i++) {
             System.out.println(getId());
         }
+
     }
 }

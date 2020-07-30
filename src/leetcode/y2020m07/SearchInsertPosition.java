@@ -1,5 +1,9 @@
 package leetcode.y2020m07;
 
+import test.Test;
+
+import java.util.ArrayList;
+import java.util.List;
 import java.util.stream.Stream;
 
 public class SearchInsertPosition {
@@ -34,7 +38,9 @@ public class SearchInsertPosition {
         System.out.println(test.searchInsert(new int[]{1,3,5,6}, 5));
         System.out.println(test.searchInsert(new int[]{1}, 2));
 //        System.out.println(test.searchInsert(new int[]{1,3,5,6}, 0));
-        Stream.of()
+        List<Test> testList=new ArrayList<>();
+        boolean test1 = testList.contains("test");
+        System.out.println(test1);
     }
 
 }
