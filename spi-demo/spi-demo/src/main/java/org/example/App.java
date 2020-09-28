@@ -1,0 +1,20 @@
+package org.example;
+
+import java.util.Iterator;
+import java.util.ServiceLoader;
+
+/**
+ * Hello world!
+ *
+ * @author whx
+ */
+public class App {
+    public static void main(String[] args) {
+        ServiceLoader<Log> serviceLoader = ServiceLoader.load(Log.class);
+        Iterator<Log> iterator = serviceLoader.iterator();
+        while (iterator.hasNext()) {
+            Log log = iterator.next();
+            log.log("JDK SPI");
+        }
+    }
+}
