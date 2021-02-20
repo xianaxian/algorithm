@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
@@ -32,6 +33,8 @@ class TestMap{
 public class Test {
     public static void main(String[] args) {
         System.out.println("我是一个测试");
+        String s="2";
+
         List<Long> list = new ArrayList<>();
         list.add(123L);
         list.add(223L);
